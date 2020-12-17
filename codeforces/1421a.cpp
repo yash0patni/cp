@@ -12,7 +12,19 @@ using namespace std;
 
 void solve()
 {
-    
+    ll a, b;
+    cin >> a >> b;
+    ll x = 0;
+    for (int i = 0; i < 32; i++)
+    {
+        if ((a >> i)&1 && (b >> i)&1)
+        {
+            x += (1 << i);
+        }
+    }
+    //cout << x << endl;
+    ll ans = (a^x) + (b^x);
+    cout << ans << endl;
 }
 
 int main()

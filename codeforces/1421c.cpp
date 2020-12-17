@@ -12,12 +12,18 @@ using namespace std;
 
 void solve()
 {
-    
+    string s;
+    cin >> s;
+    int n = s.length();
+    cout << 3 << endl;
+    cout << "R " << n-1 << endl;
+    cout << "L " << n << endl;
+    cout << "L " << 2 << endl;
 }
 
 int main()
 {
-    testcase()
+    //testcase()
     {
         solve();
     }

@@ -5,19 +5,26 @@
 #define ll long long
 #define pii pair<int,int>
 #define pll pair<ll,ll>
-#define pb push_back
 #define mod 1000000007
 
 using namespace std;
 
 void solve()
 {
-    
+    ll x;
+    cin >> x;
+    int cnt = 0;
+    while (x)
+    {
+        cnt += x&1;
+        x >>= 1;
+    }
+    cout << cnt << endl;
 }
 
 int main()
 {
-    testcase()
+    //testcase()
     {
         solve();
     }

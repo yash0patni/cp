@@ -5,14 +5,24 @@
 #define ll long long
 #define pii pair<int,int>
 #define pll pair<ll,ll>
-#define pb push_back
 #define mod 1000000007
 
 using namespace std;
 
 void solve()
 {
-    
+    int n, a, b;
+    cin >> n >> a >> b;
+    string s = "";
+    for (int i = 0; i < b; i++)
+    {
+        s += 'a' + i;
+    }
+    string st = "";
+    for (int i = 0; i < n/b + 1; i++)
+        st += s;
+
+    cout << st.substr(0,n) << endl;
 }
 
 int main()
